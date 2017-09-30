@@ -1,0 +1,251 @@
+
+
+.ranking-tab .long-column {
+    width: 100%;
+}
+
+.ranking-tab .ranking-tab-header {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+}
+.ranking-tab th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+.ranking-tab td, .ranking-tab th {
+    font-family: arial;
+    color: #0C0C0C;
+}
+
+.ranking-tab .ranking-tab-content {
+    text-align: center;
+    vertical-align: top;
+}
+
+.ranking-tab td {
+    font-size: 14px;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+.ranking-tab td, .ranking-tab th {
+    font-family: arial;
+    color: #0C0C0C;
+}
+
+.ranking-tab .ranking-tab-bold {
+    font-weight: bold;
+    vertical-align: top;
+}
+
+
+.widgettitle {
+    font-size: 0.9em;
+    font-family: 'Droid Sans', Arial, Tahoma;
+    background: #333;
+}
+
+h3.widgettitle {
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    padding: 0 !important;
+    background-color: transparent;
+    margin: 5px 0 5px 0;
+    border-color: #dbb408 !important;
+    color: #000000;
+    text-align : center;
+}
+
+h3.widgettitle > span {
+    padding: 0.5rem 0.8rem;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h3.widgettitle > span {
+    background-color: #dbb408 !important;
+    font-family: 'Montserrat', arial;
+}
+
+table tr:nth-child(2n) td {
+    background: #EBEBEB;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div, table, tr, th, td {
+    margin: 0;
+        margin-top: 0px;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    box-sizing: border-box;
+}
+a:hover, a:active {
+    text-decoration: none;
+}
+
+br {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.result-option {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.result-option div.text-center, .result-option div.text-center {
+    color: #FFFFFF;
+    background-color: #1e73be;
+    text-align: center;
+}
+
+.result-option .results-content:last-child .result-display .confrontation {
+    border-bottom: 1px solid #CECECE;
+}
+
+.confrontation .date {
+    font-family: 'Montserrat', arial;
+}
+
+.date {
+    margin-bottom: 0em;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.confrontation .competition {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.detail {
+    display: flex;
+    font-family: 'Montserrat', arial;
+}
+
+.detail .equipe1 {
+    width: 39%;
+}
+.detail .equipe2 {
+    text-align: right;
+    width: 39%;
+    justify-content: flex-end;
+}
+.detail > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.detail div .logo {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+}
+.detail div .logo img {
+    height: initial;
+    width: 30px;
+}
+.detail div .name {
+    width: 74%;
+    display: block;
+    height: 20px;
+    font-size: 16px;
+}
+.nobold {
+    font-weight: normal !important;
+}
+.detail .equipe1 .forfeit {
+    display: block;
+    padding-left: 60px;
+    font-size: 11px;
+}
+.detail div .forfeit {
+    width: 100%;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.detail .score_match {
+    display: block;
+    width: 22%;
+    font-size: 43px;
+    font-weight: bold;
+    text-align: center;
+}
+.detail > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.noscore {
+    font-size: 20px;
+    margin-top: 2%;
+}
+.detail .score_match .score_match_penalty {
+    font-size: 12px;
+    display: block;
+}
+.result-option .results-content:last-child .result-display .confrontation {
+    border-bottom: 1px solid #CECECE;
+}
+.result-option .results-content:last-child .confrontation {
+    border-bottom: none;
+}
+.confrontation, .calendrier-team, .classement-list .classement-competition {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+.results-content a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+.confrontation .detail .score_match img {
+    height: 30px;
+}
+
+
+
