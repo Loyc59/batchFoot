@@ -9,7 +9,8 @@ config.PAGES.forEach(page => {
 		page.name,
 		page.url,
 		page.selector,
-		page.dest
+		page.dest,
+		page.balise
 	);
 });
 
@@ -21,12 +22,12 @@ config.PAGES.forEach(page => {
  * @param {*} selector 
  * @param {*} dest 
  */
-function getHtml(name, url, selector, dest) {
+function getHtml(name, url, selector, dest, balise) {
 	request(url, (err, resp, html) => {
         if (!err){
 			$ = cheerio.load(html);
-
-			fs.writeFile(dest, $(selector).html(), (err) => {
+			
+			fs.writeFile(dest, balise+$(selector).html()+"</div>", (err) => {
 				if(err) {
 					return console.log(err);
 				}
