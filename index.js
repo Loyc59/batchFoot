@@ -8,9 +8,12 @@ config.PAGES.forEach(page => {
 	getHtml(
 		page.name,
 		page.url,
-		page.selector,
+		page.selector1,
+		page.selector2,
 		page.dest,
-		page.balise
+		page.balise1,
+		page.balise2,
+		page.type
 	);
 });
 
@@ -22,18 +25,29 @@ config.PAGES.forEach(page => {
  * @param {*} selector 
  * @param {*} dest 
  */
-function getHtml(name, url, selector, dest, balise) {
+function getHtml(name, url, selector1, selector2, dest, balise1, balise2, type) {
 	request(url, (err, resp, html) => {
         if (!err){
 			$ = cheerio.load(html);
 			
-			fs.writeFile(dest, balise+$(selector).html()+"</div>", (err) => {
-				if(err) {
-					return console.log(err);
-				}
-
-				console.log(`The file ${name} saved!`);
-			}); 
+			if (type == 1)
+			{
+				fs.writeFile(dest, balise1+$(selector1).html()+"</span></h3>"+balise2+$(selector2).html()+"</div></div>", (err) => {
+					if(err) {
+						return console.log(err);
+					}
+					console.log(`The file ${name} saved!`);
+				});
+			}
+			else
+			{
+				fs.writeFile(dest, balise1+$(selector1).html()+"</div>", (err) => {
+					if(err) {
+						return console.log(err);
+					}
+					console.log(`The file ${name} saved!`);
+				});
+			} 
 		}
 	});
 }
